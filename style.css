@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px gray;
+  }
+  
+  .container {
+    width: 25rem;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 25px 45px 45px;
+    background-image: linear-gradient(to bottom right, rgb(85, 64, 85), rgb(229, 188, 194));
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+   
+  
+  button {
+    background: rgb(191, 159, 191);
+    border: none;
+    color:rgb(106, 45, 106);
+    --c: ; /* text color */
+    font-size: 1.5rem;
+    font-weight:bold;
+    font-family: system-ui, sans-serif;
+    padding: .1em .3em;
+    transition: 0.8s;
+    transform: perspective(500px) rotateX(var(--rotation-angle, 45deg));
+  }
+  button:hover,
+  button:active {
+    text-shadow: none;
+    color: var(--c);
+   
+  }
+  
